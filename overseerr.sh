@@ -85,7 +85,7 @@ ExecStart=$(which node) dist/index.js
 [Install]
 WantedBy=default.target
 EOF
-    port=$(_port 1000 18000)
+    port=$(80)
     cat > ~/overseerr/env.conf << EOF
 # specify on which port to listen
 PORT=$port
